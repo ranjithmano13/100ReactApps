@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body{
+  background-image: linear-gradient(to bottom right,#3A1C71,#D76D77,#FFAF7B);
+  /* background-image: linear-gradient(to bottom right,#403f44,#1e1b32); */
+  /* background-image: linear-gradient(to bottom right,#5b7fff,#33ccfc); */
+}
+*{
+  font-family: 'Roboto',serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  position: fixed;
+  top: -5%;
+  color: cornsilk;
+  font-weight: 300;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+
+}
+ul{
+  display: flex;
+  gap: 3em ;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 10em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+article{
+  width: 240px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+article:hover{
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+article img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 16px 16px 0 0px;
+
+}
+
+article h1{
+  text-align: center ;
+  margin: 0;
+  color: cornsilk;
+  font-weight: 300;
+}
+article p{
+  padding: 0 1em;
+  color: blanchedalmond;
+  position: absolute;
+  left: 0;
+  color: #fff;
+  padding: 2em;
+  border-radius: 16px 16px 0 0px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+article  i{
+  padding: 2em 1em;
+  color: cornsilk;;
+}
+
+@keyframes slide-in {
+  0% {
+    top:70%;
+    opacity:0;
   }
-  to {
-    transform: rotate(360deg);
+  10% {
+      top:70%;
+      opacity:0;
+    }
+    20% {
+      top:65%;
+      opacity:0.2;
+    }
+    30% {
+      top:60%;
+      opacity:0.3;
+    }
+    40% {
+      top:50%;
+      opacity:0.4;
+    }
+    50% {
+      top:45%;
+      opacity:0.5;
+    }
+    60% {
+      top:40%;
+      opacity:0.6;
+    }
+    70% {
+      top:30%;
+      opacity:0.7;
+    }
+    80% {
+      top:10%;
+      opacity:0.8;
+    }
+    90% {
+      top:0%;
+      opacity:0.9;
+    }
+  100% {
+      top:-7%;
+    opacity:1;
   }
 }
