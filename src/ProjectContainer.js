@@ -38,7 +38,7 @@ export default function ProjectContainer(props) {
             href={props.projectLink}
             target="_blank"
           >
-            <i className="fa-solid fa-arrow-up-right-from-square fa-lg" tootip="live"></i>
+            <i className="fa-solid fa-arrow-up-right-from-square fa-lg"></i>
           </a>
         </div>
       </article>
