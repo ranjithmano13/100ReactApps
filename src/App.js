@@ -6,8 +6,8 @@ const projects = [
     name:'Movie Search',
     description:'A simple movie search react app with OMDB API',
     src:'images/simple-movie-search.png',
-    giturl:'https://github.com/ranjithmano13/simple-movie-search-react-app.git',
-    projectLink:'https://ranjithmano13.github.io/simple-movie-search-react-app'
+    giturl:'https://github.com/ranjithmano13/moviesearch-reactapp.git',
+    projectLink:'https://ranjithmano13.github.io/moviesearch-reactapp'
   },
   {
     name:'Movie Search',
