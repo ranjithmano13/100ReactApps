@@ -23,7 +23,6 @@ body{
 }
 ul{
   display: flex;
-  gap: 3em ;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
@@ -39,6 +38,7 @@ article{
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 1.5em;
 }
 
 article:hover{
