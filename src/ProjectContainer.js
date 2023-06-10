@@ -10,7 +10,7 @@ export default function ProjectContainer(props) {
       backdropFilter: "blur(15px)",
       animation: "slide-in 0.3s  forwards alternate",
     });
-    
+
   };
 
   const hideP = () =>
